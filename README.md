@@ -38,7 +38,7 @@ To fetch odoo merge pull requests refs use this command:
     $ ./odoo.py setup_git_review
 
 
-For Odoo developers - in this repository is make for fixes and bugs of base code
+For Odoo developers - in this repository is make for fixes and resolve bugs in base code
 --------------------------------------------------------------------------------
 1. Fixed problem with pricelist in account_invoice.py module.
 2. Fixed problem with debit-credit for EU-deals in accounting.py.
