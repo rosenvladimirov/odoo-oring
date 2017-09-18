@@ -3,6 +3,10 @@
 [![Help](http://img.shields.io/badge/8.0-help-8f8f8f.svg?style=flat)](https://www.odoo.com/forum/help-1)
 [![Nightly Builds](http://img.shields.io/badge/8.0-nightly-8f8f8f.svg?style=flat)](http://nightly.odoo.com/)
 
+Fixed version of Odoo
+---------------------
+mission ot the project: fix probloblems in Odoo linked basically with bookkeeping and EU rules for VAT and Accountings
+This is last repository version from 18092017 and it full compatible with odoo 8.0.
 Odoo
 ----
 
