@@ -7,6 +7,7 @@ Fixed version of Odoo
 ---------------------
 mission ot the project: fix probloblems in Odoo linked basically with bookkeeping and EU rules for VAT and Accountings
 This is last repository version from 18092017 and it full compatible with odoo 8.0.
+
 Odoo
 ----
 
