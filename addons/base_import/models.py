@@ -132,6 +132,7 @@ class ir_import(orm.TransientModel):
         :throws csv.Error: if an error is detected during CSV parsing
         :throws UnicodeDecodeError: if ``options.encoding`` is incorrect
         """
+        _logger.info("Read csv %s" % record.file)
         csv_iterator = csv.reader(
             StringIO(record.file),
             quotechar=str(options['quoting']),

@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Calendar',
+    'name': 'Calendar fix',
     'version': '1.0',
     'depends': ['base', 'mail', 'base_action_rule', 'web_calendar'],
     'summary': 'Personal & Shared Calendar',

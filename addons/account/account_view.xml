@@ -1001,16 +1001,19 @@
                                 <label for="type"/>
                                 <div>
                                     <field name="type"/>
-                                    <field name="amount" attrs="{'invisible':[('type','in',('none', 'code', 'balance'))]}"/>
+                                    <field name="amount" attrs="{'invisible':[('type','in',('none', 'code', 'balance', 'separate', 'customs'))]}"/>
                                 </div>
                                 <field name="python_compute" attrs="{'invisible':[('type','!=','code')],'required':[('type','=','code')]}"/>
                                 <field name="python_compute_inv" attrs="{'invisible':[('type','!=','code')],'required':[('type','=','code')]}"/>
                                 <field name="price_include"/>
+                                <field name="tax_parent_sign"/>
                             </group>
                             <group string="Misc">
                                 <field name="sequence"/>
                                 <field name="include_base_amount"/>
                                 <field name="child_depend"/>
+                                <field name="tax_credit_payable"/>
+                                <field name="account_separate" readonly="True" invisible="1"/>
                             </group>
                             <group string="Invoices">
                                   <field name="account_collected_id" domain="[('type','&lt;&gt;','view'),('type','&lt;&gt;','consolidation')]"/>
@@ -2377,14 +2380,13 @@
                     <notebook>
                         <page string="Cash Transactions" attrs="{'invisible': [('state','=','draft')]}">
                             <field name="line_ids" context="{'date':date}">
-                                <tree editable="bottom" string="Statement lines" colors="grey:journal_entry_id!=False">
+                                <tree editable="bottom" string="Statement lines">
                                     <field name="sequence" invisible="1"/>
-                                    <field name="journal_entry_id" invisible="1"/>
-                                    <field name="date" attrs="{'readonly' : [('journal_entry_id', '!=', False)] }"/>
-                                    <field name="name" attrs="{'readonly' : [('journal_entry_id', '!=', False)] }"/>
-                                    <field name="ref" attrs="{'readonly' : [('journal_entry_id', '!=', False)] }"/>
-                                    <field name="partner_id" attrs="{'readonly' : [('journal_entry_id', '!=', False)] }"/>
-                                    <field name="amount" attrs="{'readonly' : [('journal_entry_id', '!=', False)] }"/>
+                                    <field name="date"/>
+                                    <field name="name"/>
+                                    <field name="ref"/>
+                                    <field name="partner_id"/>
+                                    <field name="amount"/>
                                 </tree>
                                 <form string="Statement lines">
                                     <group col="4">
