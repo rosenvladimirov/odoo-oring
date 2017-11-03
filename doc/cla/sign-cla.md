@@ -15,7 +15,7 @@ requirement is explained in the [FAQ](#faq).
     contain:
 
 ```
-<country>, <date>
+Bulgaria, 03112017
 
 I hereby agree to the terms of the Odoo Individual Contributor License
 Agreement v1.0.
@@ -25,16 +25,16 @@ declaration.
 
 Signed,
 
-<name> <git_email> https://github.com/<login>
+Rosen Vladimirov vladimirov.rosen@gmail.com https://github.com/rosenvladimirov
 ```
 
     Replacing the following placeholders:
 
-    * `<country>`: your country
-    * `<date>`: current date in the form `YYYY-MM-DD`
-    * `<name>`: your name
-    * `<git_email>`: your git committer email **(use `git config user.email` to see it)**
-    * `<login>`: your GitHub login
+    * `<country>`: Bulgaria
+    * `<date>`: 2017-11-03
+    * `<name>`: Rosen Vladimirov
+    * `<git_email>`: vladimirov.rosen@gmail.com
+    * `<login>`: rosenvladimirov
 
 3. An Odoo R&D Team member will verify and accept your Pull Request. You can
 make other pull requests, but we won't be able to merge them until your CLA
